@@ -1134,18 +1134,34 @@ code {
   }
 }
 /* RDR2 Custom Cursor */
-body.rdr-cursor {
-  cursor: url('/cursor/RDR2 Arthur.cur'), auto;
+
+html,
+body {
+  cursor: none !important;
 }
 
-body.rdr-cursor a,
-body.rdr-cursor button,
-body.rdr-cursor [role="button"] {
-  cursor: url('/cursor/RDR2 Gun.cur'), pointer;
+.custom-cursor {
+  position: fixed;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-4px, -4px);
+  user-select: none;
 }
 
-body.rdr-cursor input,
-body.rdr-cursor textarea,
-body.rdr-cursor select {
-  cursor: text;
+.custom-cursor-gun {
+  width: 34px;
+  height: 34px;
+}
+
+a,
+button,
+[role="button"],
+input,
+textarea,
+select,
+.disabled-link {
+  cursor: none !important;
 }

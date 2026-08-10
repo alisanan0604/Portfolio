@@ -1,6 +1,5 @@
 import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
 
-
 import '../styles.css'
 
 const SEO_TITLE = 'Sanan Ali | Full-Stack & AI Developer'
